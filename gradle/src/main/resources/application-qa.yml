@@ -1,0 +1,8 @@
+---
+spring:
+ profiles: qa
+server:
+ port: 8259
+security:
+ user.name: 'qa'
+ user.password: 'qa'

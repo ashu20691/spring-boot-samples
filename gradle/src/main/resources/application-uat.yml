@@ -1,0 +1,8 @@
+---
+spring:
+ profiles: uat
+server:
+ port: 8258
+security:
+ user.name: 'uat'
+ user.password: 'uat'
