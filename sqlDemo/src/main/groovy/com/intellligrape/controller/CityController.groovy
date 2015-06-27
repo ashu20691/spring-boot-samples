@@ -41,7 +41,7 @@ class CityController {
 
     @RequestMapping('/maharashtra')
     def maharashtra() {
-        cityRepository.findAllByStateAllIgnoringCase("maharashtra")
+        cityRepository.findByStateAllIgnoringCase("maharashtra")
     }
 
     @RequestMapping('/findByStateAndCity')
@@ -52,5 +52,10 @@ class CityController {
     @RequestMapping('/checkConstraints')
     def checkConstraints() {
         cityRepository.save(new City("Sirdi", null))
+    }
+
+    @RequestMapping('/total')
+    def total() {
+        cityRepository.count()
     }
 }

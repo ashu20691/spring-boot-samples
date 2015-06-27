@@ -10,6 +10,6 @@ public interface CityRepository extends CrudRepository<City, Long> {
 
     City findByNameAndStateAllIgnoringCase(String name, String state);
 
-    List<City> findAllByStateAllIgnoringCase(String state);
+    List<City> findByStateAllIgnoringCase(String state);
 
 }
